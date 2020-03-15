@@ -95,19 +95,28 @@ const z_function = () => {
     zodiac_table.style.display = "none";
   }
 };
-// const generateTableHead = (table, data) => {
-//   let thead = table.createTHead();
-//   let row = thead.insertRow();
-//   for (let key of zodiac_collection) {
-//     let th = document.createElement("th");
-//     let text = document.createTextNode(key);
-//     th.appendChild(text);
-//     row.appendChild(th);
-//   }
-// };
-window.onload = () => {
-  // let table = document.querySelector("table");
-  // let data = Object.keys(zodiac_collection[0]);
-  // console.log(data);
-  // generateTableHead(table, data);
+const generateZodiacTableHead = (table, data) => {
+  let thead = table.createTHead();
+  let row = thead.insertRow();
+  for (let key of data) {
+    let th = document.createElement("th");
+    let text = document.createTextNode(key);
+    th.appendChild(text);
+    row.appendChild(th);
+  }
 };
+const generateZodiacTable = (table, data) => {
+  for (let ele of data) {
+    let row = table.insertRow();
+    for (key in ele) {
+      let cell = row.insertCell();
+      let text = document.createTextNode(ele[key]);
+      cell.appendChild(text);
+    }
+  }
+};
+
+let ztable = document.querySelector("#zodiac-table-test");
+let zdata = Object.keys(zodiac_collection[0]);
+generateZodiacTable(ztable, zodiac_collection);
+generateElementTableHead(ztable, zdata);

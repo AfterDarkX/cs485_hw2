@@ -27,33 +27,35 @@ const element_collection = [
 ];
 let element_table = document.getElementById("element-table");
 let e_checkbox = document.getElementById("element-checkbox");
-// window.onload = () => {
-//   let table = document.querySelector("table");
-//   let data = Object.key(element_collection[0]);
-//   console.log(data);
-//   generateElementTableHead(table, data);
-// };
 const generateElementTableHead = (table, data) => {
   let thead = table.createTHead();
   let row = thead.insertRow();
   for (let key of data) {
-    console.log(key);
     let th = document.createElement("th");
     let text = document.createTextNode(key);
     th.appendChild(text);
     row.appendChild(th);
   }
 };
+const generateElementTable = (table, data) => {
+  for (let element of data) {
+    let row = table.insertRow();
+    for (key in element) {
+      let cell = row.insertCell();
+      let text = document.createTextNode(element[key]);
+      cell.appendChild(text);
+    }
+  }
+};
+
 const e_function = () => {
   if (e_checkbox.checked == true) {
-    // console.log(e_checkbox.checked);
-    console.log(data);
     element_table.style.display = "block";
   } else {
     element_table.style.display = "none";
   }
 };
-let table = document.querySelector("table");
-let data = Object.keys(element_collection[0]);
-console.log(data);
-generateElementTableHead(table, data);
+let etable = document.querySelector("#element-table-test");
+let edata = Object.keys(element_collection[0]);
+generateElementTable(etable, element_collection);
+generateElementTableHead(etable, edata);

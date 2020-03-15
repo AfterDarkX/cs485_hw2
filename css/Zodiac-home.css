@@ -56,7 +56,7 @@ tr:nth-child(even) {
 tr:nth-child(odd) {
   background-color: ghostwhite;
 }
-th{
+th {
   background-color: paleturquoise;
 }
 td {
@@ -65,11 +65,10 @@ td {
 #table-element-name {
   text-align: left;
 }
-#table-element-desc {
-}
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 600px) {
   .flex-container {
     display: flex;
     flex-direction: column;
+    margin: auto;
   }
 }

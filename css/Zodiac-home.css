@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  /* background-image: url(/Hw2_cs485/img/milky-way-2695569__340.jpg); */
+  /* background-repeat: no-repeat; */
+  /* background-size: ; */
+  /* background-size: cover; */
+}
+h1 {
+  margin: 20px;
+  /* color:azure; */
+}
+p {
+  margin-left: 20px;
+  font-size: 20px;
+  /* color: beige; */
+}
+label {
+  margin-right: 10px;
+}
+input[type="checkbox"] {
+  margin-left: 10px;
+}
+section {
+  position: relative;
+  margin-left: 5%;
+}
+#element-table {
+  display: none;
+}
+#zodiac-table {
+  display: none;
+}
+h2 {
+  text-align: center;
+  /* color: #ffffff; */
+}
+#zodiac-checkbox {
+}
+.flex-container {
+  display: flex;
+  /* flex-direction: column; */
+}
+table,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin: 10px;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+tr:nth-child(odd) {
+  background-color: ghostwhite;
+}
+th{
+  background-color: paleturquoise;
+}
+td {
+  padding: 5px;
+}
+#table-element-name {
+  text-align: left;
+}
+#table-element-desc {
+}
+@media only screen and (max-width: 425px) {
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zodiac</title>
+    <link rel="stylesheet" href="./css/Zodiac-home.css">
+
+</head>
+
+<body>
+    <header></header>
+    <section>
+        <h1>Table: Chinese Zodiac Reference</h1>
+        <p>Search by:<span>
+                <input type="checkbox" id="zodiac-checkbox" name="zodiac-checkbox" onchange="z_function()"><label
+                    for="zodiac-checkbox">Zodiac</label>
+                <input type="checkbox" id="element-checkbox" name="element-checkbox" onchange="e_function()"><label
+                    for="element-checkbox">Element</label>
+
+            </span></p>
+
+        <div class="flex-container">
+            <div id="element-table">
+                <h2>Element</h2>
+                <table id="element-table-test">
+                    <!-- <thead>
+                        <tr>
+                            <th id="table-element-name">name</th>
+                            <th id="table-element-desc">desc</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Wood</td>
+                            <td>has high morals, self-confident, expansive and co-operative, with wide and varied
+                                interests
+                                and idealistic goals</td>
+                        </tr>
+                        <tr>
+                            <td>Fire</td>
+                            <td>has leadership qualities, dynamic passion, and is decisive, self-confident, positive and
+                                assertive</td>
+                        </tr>
+                        <tr>
+                            <td>Earth</td>
+                            <td>is serious, logical and methodical, intelligent,objective and good at planning</td>
+                        </tr>
+                        <tr>
+                            <td>Metal</td>
+                            <td>is sincere, has fixed values and opinions, is strong of will, and has eloquence of
+                                speech
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Water</td>
+                            <td>is persuasive, intuitive, empathetic, objective and often sought out for their counsel
+                            </td>
+                        </tr>
+                    </tbody> -->
+                </table>
+            </div>
+            <div id="zodiac-table">
+                <h2>Zodiac</h2>
+                <table id="zodiac-table-test">
+                    <thead>
+                        <th>id</th>
+                        <th>name</th>
+                        <th>yin/Yang</th>
+                        <th>element</th>
+                        <th>imgName</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>0</td>
+                            <td>RAT</td>
+                            <td>Yang</td>
+                            <td>Water</td>
+                            <td>zodiac0.jpg</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>OX</td>
+                            <td>Yin</td>
+                            <td>Earth</td>
+                            <td>zodiac1.jpg</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>TIGER</td>
+                            <td>Yang</td>
+                            <td>Wood</td>
+                            <td>zodiac2.jpg</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>RABBIT</td>
+                            <td>Yin</td>
+                            <td>Wood</td>
+                            <td>zodiac3.jpg</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>DRAGON</td>
+                            <td>Yang</td>
+                            <td>Earth</td>
+                            <td>zodiac4.jpg</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>SNAKE</td>
+                            <td>Yin</td>
+                            <td>Fire</td>
+                            <td>zodiac5.jpg</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>HORSE</td>
+                            <td>Yang</td>
+                            <td>Fire</td>
+                            <td>zodiac6.jpg</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>GOAT</td>
+                            <td>Yin</td>
+                            <td>Earth</td>
+                            <td>zodiac7.jpg</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>MONKEY</td>
+                            <td>Yang</td>
+                            <td>Metal</td>
+                            <td>zodiac8.jpg</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>ROOSTER</td>
+                            <td>Yin</td>
+                            <td>Metal</td>
+                            <td>zodiac9.jpg</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>DOG</td>
+                            <td>Yang</td>
+                            <td>Eath</td>
+                            <td>zodiac10.jpg</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>PIG</td>
+                            <td>Yin</td>
+                            <td>Water</td>
+                            <td>zodiac11.jpg</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="./Element-table.js" type="text/javascript"></script>
+<script src="./Zodiac-table.js" type="text/javascript"></script>
+
+</html>

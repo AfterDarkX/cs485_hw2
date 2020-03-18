@@ -5,14 +5,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zodiac Radio</title>
-    <link rel="stylesheet" href="zodiac_radio.css">
+    <link rel="stylesheet" href="./css/zodiac_radio.css">
 </head>
 
 <body>
-    <header></header>
-    <section>
-        <H1>Chinese Zodiac Information</H1>
+    <header>
+        <h1>Chinese Zodiac Information</h1>
+        <div>
+            <p id="search-field">Search By:<span>
+                    <input type="radio" name="choice-radio" id="year-radio" onclick="yearRadioInput()" checked>
+                    <label for="year-radio">Year</label>
+                    <input type="radio" name="choice-radio" id="zodiac-radio" onclick="zodiacRadioInput()">
+                    <label for="zodiac-radio">Zodiac</label>
+                </span>
+            </p>
+        </div>
+    </header>
+    <section class="zodiac-header">
+        <div class="choice-text">
+            <fieldset class="field-set-choice">
+                <legend>
+                    Your Choice
+                </legend>
+                <div id="input-field">
+                    <label for="choice-text">Enter a year:</label>
+                    <input type="text" name="choice-text" id="choice-text">
+                    <input type="submit" onclick="cSubmit()" value="submit">
+                </div>
+                <!--Dropdown-->
+                <div id="zodiac-dropdown-sect">
+                    <label for="zodiac-dropdown">Choose Zodiac:</label>
+                    <select name="zodiac-dropdown" id="zodiac-dropdown">
+                        <!-- <option value="">Select Zodiac</option> -->
+                    </select>
+                    <input type="submit" onclick="zSubmit()" value="submit">
+                </div>
+            </fieldset>
+        </div>
+        <div id="zodiac-snippet">
+            <div class="zodiac-snippet-thumbnail">
+                <!-- <img src="img/zodiac0.jpg" alt="RAT"> -->
+                <img id="zodiac-img" src="img/zodiac-selector.png" alt="zodiac-selector">
+            </div>
+            <div class="zodiac-snippet-content">
+                <div id="year" class="desc"><span>Year: <b id="yearText"></b></span></div>
+                <div class="desc"><span>Chinese Zodiac: <b id="chinese-zodiac"></b></span></div>
+                <div class="desc"><span>YinYang: <b id="YinYang"></b></span></div>
+                <div class="desc"><span>Element: <b id="element"></b></span></div>
+                <div class=" desc"><span>Desc: <b id="zodiac-desc"></b></span></div>
+            </div>
+        </div>
     </section>
 </body>
+<script src="./js/zodiac-radio.js"></script>
 
 </html>

@@ -3,3 +3,71 @@
   padding: 0;
   box-sizing: border-box;
 }
+.zodiac-header {
+  margin: 20px;
+  /* width: 50%; */
+  display: flex;
+}
+h1 {
+  text-align: center;
+}
+#search-field {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.choice-text {
+  margin: 5px;
+  width: 30%;
+}
+.field-set-choice {
+  padding: 20px;
+}
+input[type="submit"] {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+#zodiac-dropdown-sect {
+  display: none;
+}
+#input-field {
+  display: inline;
+}
+#zodiac-snippet {
+  display: flex;
+  border: 5px solid royalblue;
+  border-radius: 6px;
+  width: 50%;
+}
+.zodiac-snippet-content {
+  margin-left: 5px;
+  /* background-color: sandybrown; */
+  border-radius: 2px;
+}
+#zodiac-img{
+  margin-top: 2px;
+  max-width: 162px;
+  max-height: 183px;
+}
+.desc{
+  margin-left: 5px;
+}
+@media only screen and (max-width: 900px) {
+  .choice-text {
+    margin: 5px;
+    margin-left: 20px;
+    width: 80%;
+  }
+  #zodiac-snippet {
+    display: flex;
+    margin-left: 20px;
+    border: 5px solid royalblue;
+    border-radius: 6px;
+    width: 80%;
+  }
+  .zodiac-header {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+}
